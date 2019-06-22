@@ -62,3 +62,15 @@ To github.com:caoyanfeng/GitHubTest.git
    
     cyf@cyf-pad:~/github/GitHubTest$ git push origin dev
 Everything up-to-date
+### 2.3分支删除
+
+    cyf@cyf-pad:~/github/GitHubTest$ git branch -D dev 
+已删除分支 dev（曾为 a4e7f3d）。
+
+    cyf@cyf-pad:~/github/GitHubTest$ git push origin dev
+error: src refspec dev does not match any.
+error: 无法推送一些引用到 'git@github.com:caoyanfeng/GitHubTest.git'
+
+    cyf@cyf-pad:~/github/GitHubTest$ git push origin :dev
+To github.com:caoyanfeng/GitHubTest.git
+ - [deleted]         dev
