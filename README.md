@@ -14,8 +14,8 @@
 将内容贴到下图位置
 ![image](https://github.com/caoyanfeng/GitHubTest/blob/master/images/add_ssh.png)
 ### 1.3创建仓库
-## 二、创建分支
-
+## 二、分支操作
+### 2.1创建仓库
     cyf@cyf-pad:~/github/GitHubTest$ git checkout -b dev
 切换到一个新分支 'dev'
 
@@ -48,3 +48,17 @@ remote:
 To github.com:caoyanfeng/GitHubTest.git
  * [new branch]      dev -> dev
 分支 'dev' 设置为跟踪来自 'origin' 的远程分支 'dev'。
+
+### 2.2分支推送
+
+    cyf@cyf-pad:~/github/GitHubTest$ git push origin master
+对象计数中: 3, 完成.
+Delta compression using up to 4 threads.
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 1.24 KiB | 1.24 MiB/s, 完成.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:caoyanfeng/GitHubTest.git
+   2328701..c65c540  master -> master
+   
+    cyf@cyf-pad:~/github/GitHubTest$ git push origin dev
+Everything up-to-date
