@@ -12,6 +12,6 @@
 
     cyf@cyf-pad:~/.ssh$ cat id_rsa.pub
 将内容贴到下图位置
-![image](https://github.com/caoyanfeng/GitHubTest/master/images/add_ssh.png)
+![image](https://github.com/caoyanfeng/GitHubTest/blob/master/images/add_ssh.png)
 ### 1.3创建仓库
 
