@@ -101,4 +101,8 @@ To github.com:caoyanfeng/GitHubTest.git
 cyf@cyf-pad:~/github/GitHubTest$ git push origin :init
 To github.com:caoyanfeng/GitHubTest.git
   [deleted]         init
-
+## 三、公钥认证管理
+###3.1 用户级公钥管理
+访问所有版本库
+###3.2 项目级公钥管理
+访问某个版本库
