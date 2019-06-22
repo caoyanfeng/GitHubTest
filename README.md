@@ -74,3 +74,31 @@ error: 无法推送一些引用到 'git@github.com:caoyanfeng/GitHubTest.git'
     cyf@cyf-pad:~/github/GitHubTest$ git push origin :dev
 To github.com:caoyanfeng/GitHubTest.git
  - [deleted]         dev
+### 2.４tag操作
+
+    cyf@cyf-pad:~/github/GitHubTest$ git tag -m "Init project" init 8eee9ced1758e5fb3b2c0bcce9d7ed141682c0bb 
+    cyf@cyf-pad:~/github/GitHubTest$ git tag
+init
+
+    cyf@cyf-pad:~/github/GitHubTest$ git tag -m "branch operation" branch 
+    cyf@cyf-pad:~/github/GitHubTest$ git tag
+branch
+init
+
+    cyf@cyf-pad:~/github/GitHubTest$ git push origin refs/tags/*
+对象计数中: 5, 完成.
+Delta compression using up to 4 threads.
+压缩对象中: 100% (5/5), 完成.
+写入对象中: 100% (5/5), 752 bytes | 752.00 KiB/s, 完成.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:caoyanfeng/GitHubTest.git
+ [new tag]         branch -> branch
+ [new tag]         init -> init
+
+    cyf@cyf-pad:~/github/GitHubTest$ git tag -d init
+已删除标签 'init'（曾为 a44f306）
+cyf@cyf-pad:~/github/GitHubTest$ git push origin :init
+To github.com:caoyanfeng/GitHubTest.git
+  [deleted]         init
+
